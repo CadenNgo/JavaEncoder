@@ -22,5 +22,11 @@ jobs:
         run: mvn clean install  # Adjust the build command if you use a different build tool
       
       - name: Run Unit Tests
-          run: mvn test
+        run: mvn surefire-report:report
+      
+      - name: Upload JUnit HTML Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: junit-html-report
+          path: target/site
     
