@@ -21,7 +21,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean install  # Adjust the build command if you use a different build tool
     
-    test:
+  test:
 
       steps:
         - name: Run Unit Tests
