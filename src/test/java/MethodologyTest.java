@@ -1,7 +1,6 @@
-package src.test.java;
+
+
 import org.junit.Test;
-import src.Methodology;
-import src.Dictionary;
 
 import static org.junit.Assert.*;
 

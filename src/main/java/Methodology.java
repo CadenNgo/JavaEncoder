@@ -1,4 +1,4 @@
-package src;
+
 public class Methodology {
 
   // Reference to the Dictionary instance to be used for encoding and decoding

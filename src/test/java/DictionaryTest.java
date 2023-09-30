@@ -1,8 +1,6 @@
-package src.test;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import src.Dictionary;
 
 import static org.junit.Assert.*;
 
