@@ -27,6 +27,6 @@ jobs:
       - name: Upload JUnit HTML Report
         uses: actions/upload-artifact@v2
         with:
-          name: junit-html-report
+          name: unitTestReport
           path: target/site
     
