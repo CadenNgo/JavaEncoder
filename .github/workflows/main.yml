@@ -6,7 +6,7 @@ on:
       - main  # Specify the branch to trigger the workflow
 
 jobs:
-  build:
+  build and test:
     runs-on: ubuntu-latest  # The runner environment for your workflow
 
     steps:
@@ -20,17 +20,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean install  # Adjust the build command if you use a different build tool
-    
-  test:
-    runs-on: ubuntu-latest  # The runner environment for your workflow
-    steps:
-        - name: Checkout Code into the Environment
-          uses: actions/checkout@v2
-        - name: Set up JDK 14
-          uses: actions/setup-java@v1
-          with:
-            java-version: 14
-        - name: Run Unit Tests
+      
+      - name: Run Unit Tests
           run: mvn test
-
     
