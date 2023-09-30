@@ -22,8 +22,8 @@ jobs:
         run: mvn clean install  # Adjust the build command if you use a different build tool
     
   test:
-
-      steps:
+    runs-on: ubuntu-latest  # The runner environment for your workflow
+    steps:
         - name: Run Unit Tests
           run: mvn test
 
